@@ -1,0 +1,10 @@
+body{
+    font-family: sans-serif;
+    color: #0a0a23;
+}
+#container{
+    max-width: 70%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 15px;
+}
