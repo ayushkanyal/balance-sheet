@@ -39,6 +39,7 @@ table{
     padding: 12px;
     border-spacing: 0px;
     width: 100%;
+    line-height: 1.8rem;
 }
 caption{
     color: #356eaf;
@@ -48,22 +49,31 @@ caption{
     padding: 8px 0px 2px 14px; 
 }
 
-.gray-row{
-    background-color: gray;
-    border: 1px solid black;
-    
-}
-
 th{
-    
-
+    text-align: left;
+    width: 60%;
 }
 
-td{
+.data td{
     margin: 0 10px;
     text-align: right;
 }
 
-tr:nth-child(even) {
-    background-color: rgba(150, 212, 212, 0.4);
-  }
+tr.data {
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+.italic{
+    font-style: italic;
+}
+
+.description {
+    width: 0%;
+}
+
+/* Totals Section */
+
+.total{
+    font-weight: 600;
+    text-align: right;
+}
