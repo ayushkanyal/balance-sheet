@@ -9,6 +9,7 @@ body{
     max-width: 70%;
     margin: auto;
     border: 1px solid black;
+    padding: 0.5rem;
 }
 
 /* Heading Section */
@@ -20,8 +21,9 @@ body{
 /* Divider */
 
 #years{
-    padding: 1px;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
     color: white;
     width: 100%;
     background-color: #0a0a23;
@@ -29,8 +31,9 @@ body{
 }
 
 .year{
-    margin: 0 10px;
+    margin: 0 0.6em;
     font-weight: 600;
+    
 }
 
 /* Table Section */
@@ -40,26 +43,29 @@ table{
     border-spacing: 0px;
     width: 100%;
     line-height: 1.8rem;
+    border-collapse: collapse;
 }
+
 caption{
     color: #356eaf;
     font-size: 1.3em;
     font-weight: normal;
     text-align: left;
-    padding: 8px 0px 2px 14px; 
+    padding: 8px 0px 2px 4px; 
 }
 
 th{
     text-align: left;
     width: 60%;
+    padding-left: 0.5rem;
 }
 
-.data td{
-    margin: 0 10px;
+td{
+    padding-right: 0.3rem;
     text-align: right;
 }
 
-tr.data {
+.data {
     background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
 }
 
@@ -68,7 +74,8 @@ tr.data {
 }
 
 .description {
-    width: 0%;
+    width: 100%;
+    text-align: left;
 }
 
 /* Totals Section */
@@ -76,4 +83,11 @@ tr.data {
 .total{
     font-weight: 600;
     text-align: right;
+}
+
+/* Border Section */
+
+.border{
+    border: 2.12px solid black;
+
 }
